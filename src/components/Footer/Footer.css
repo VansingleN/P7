@@ -1,0 +1,23 @@
+.footer_div {
+    height: 209px;
+    background: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 90px auto;
+    margin-bottom: 0;
+    flex-direction: column;
+}
+
+.footer_div img {
+    padding-top: 50px;
+}
+
+.footer_div h3 {
+    padding-top: 20px;
+font-size: 24px;
+display: flex;
+align-items: flex-end;
+text-align: center;
+color: #FFFFFF;
+}

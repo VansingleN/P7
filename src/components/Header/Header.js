@@ -4,10 +4,10 @@ import Logo from "../../assets/logo.png"
 
 function Header() {
     return (
-        <header className='Header'>
-        <div className='Header_div'>
-            <img className="Header_div_logo" src={Logo} alt="Kasa" />
-            <nav className='Header_div_nav'>
+        <header className='header'>
+        <div className='header_div'>
+            <img className="header_div_logo" src={Logo} alt="Kasa" />
+            <nav className='header_div_nav'>
                 <li><Link to="/">Accueil</Link></li>
                 <li><Link to="/Apropos">A Propos</Link></li>
             </nav>
