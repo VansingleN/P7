@@ -45,7 +45,7 @@
     bottom: 5.88%;
 }
 
-@media screen and (max-width: 795px) {
+@media screen and (max-width: 768px) {
     .div_cards {
         gap: 20px 60px;
         background-color: white;

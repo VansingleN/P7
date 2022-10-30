@@ -6,7 +6,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     font-weight: 500;
     margin: 40px auto;
@@ -36,7 +35,7 @@
     text-decoration: underline;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
 
     .header_div {
       margin: 20px 0 0 0;
@@ -51,5 +50,5 @@
       text-transform: uppercase;
       padding: 20px 0 20px 15px;
     }
-    
+
   }
