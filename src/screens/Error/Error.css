@@ -1,0 +1,30 @@
+.error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #FF6060;
+}
+
+.error_404 {
+    font-size: 288px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.error_msg {
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 180px;
+}
+
+.error_redirection {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 100px;
+}
+
+.error_redirection a {
+    color: #FF6060;
+    font-weight: 300;
+}
