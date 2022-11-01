@@ -1,0 +1,22 @@
+.div_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px 60px;
+    background-color: #F7F7F7;
+    border-radius: 25px;
+    max-width: 1240px;
+    margin: 40px auto;
+    padding: 45px 0;
+}
+
+@media screen and (max-width: 768px) {
+
+    .div_cards {
+        gap: 20px 60px;
+        background-color: white;
+        margin: 20px auto;
+        padding: 0;
+    }
+    
+}

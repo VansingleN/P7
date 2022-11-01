@@ -1,11 +1,10 @@
-/* import Banner from './components/Banner/Banner'
+import './App.css';
+import Router from './router/Router';
 
 function App() {
 	return (
-		<div>
-			<Banner/>
-		</div>
+		<Router />
 	)
 }
 
-export default App  */
+export default App;

@@ -23,4 +23,4 @@ function Collapse({ title, content }) {
     )
 }
 
-export default Collapse;
+export default Collapse

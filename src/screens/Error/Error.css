@@ -7,19 +7,20 @@
 }
 
 .error_404 {
-    font-size: 288px;
+    font-size: clamp(96px, 15vw, 288px);
     font-weight: 700;
-    margin-bottom: 0px;
+    margin: 40px 0px;
 }
 
 .error_msg {
-    font-size: 36px;
+    font-size: clamp(18px, 4vw, 36px);
     font-weight: 500;
     margin-bottom: 180px;
+    text-align: center;
 }
 
 .error_redirection {
-    font-size: 18px;
+    font-size: clamp(14px, 2vw, 18px);
     font-weight: 500;
     margin-bottom: 100px;
 }
@@ -27,4 +28,11 @@
 .error_redirection a {
     color: #FF6060;
     font-weight: 300;
+}
+
+@media screen and (max-width: 768px) {
+    .error_404 {
+
+        margin-top: 150px;
+    }
 }
