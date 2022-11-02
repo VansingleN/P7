@@ -1,0 +1,45 @@
+.bottomCarousel h1 {
+    color: #FF6060;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.bottomCarousel h2 {
+    color: #FF6060;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.bottomCarousel_OutCollapseInfos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottomCarousel_OutCollapseInfos_titlesAndTags {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottomCarousel_OutCollapseInfos_titlesAndTags_tags {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bottomCarousel_OutCollapseInfos_titlesAndTags_tags_tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 40px 7px 40px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: auto;
+    height: auto;
+    background-color: #FF6060;
+    color: white;
+    font-weight: 300;
+    border-radius: 20px;
+}
+
+.bottomCarousel_collapses {
+    display: flex;
+}
