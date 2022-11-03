@@ -1,0 +1,75 @@
+.Carrousel {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 415px;
+    max-width: 1240px;
+    margin: 0px auto;
+  }
+  .Carrousel p {
+    position: absolute;
+    z-index: 20;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    bottom: 0px;
+  }
+  .Carrousel_image {
+    border-radius: 25px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .fleche_droite {
+    position: absolute;
+    cursor: pointer;
+    top: 40%;
+    z-index: 10;
+    right: 20px;
+    user-select: none;
+  }
+  .fleche_gauche {
+    position: absolute;
+    cursor: pointer;
+    top: 40%;
+    z-index: 10;
+    left: 20px;
+    user-select: none;
+  }
+  .slide {
+    opacity: 0;
+    transition-duration: 1s ease;
+    transform: scale(0.95);
+  }
+  .slide.active {
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1);
+  }
+  @media screen and (max-width: 768px) {
+    .Carrousel {
+      height: 255px;
+    }
+    .Carrousel p {
+      display: none;
+    }
+    .Carrousel_image {
+      border-radius: 10px;
+    }
+    .fleche_droite {
+      height: 20px;
+      width: 11.7px;
+      top: 48%;
+      right: 7px;
+    }
+    .fleche_gauche {
+      height: 20px;
+      width: 11.7px;
+      top: 48%;
+      left: 7px;
+    }
+  }
+  

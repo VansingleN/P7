@@ -1,3 +1,8 @@
+.mainWrapperLogement {
+    margin-left:30px;
+    margin-right: 30px;
+}
+
 .bottomCarousel h1 {
     color: #FF6060;
     font-size: 36px;
@@ -13,6 +18,8 @@
 .bottomCarousel_OutCollapseInfos {
     display: flex;
     justify-content: space-between;
+    max-width: 1240px;
+    margin: 40px auto;
 }
 
 .bottomCarousel_OutCollapseInfos_titlesAndTags {
@@ -42,4 +49,32 @@
 
 .bottomCarousel_collapses {
     display: flex;
+    justify-content: space-between;
+    max-width: 1480px;
+    margin: 55px;
+}
+
+.bottomCarousel_collapses_collapse {
+    width: 38%;
+}
+
+.host {
+    display: flex;
+}
+
+.host p {
+   color: #FF6060;
+   width: 65px;
+}
+.host img {
+    border-radius: 100px;
+    height: 64px;
+    width: 64px;
+}
+
+@media all and (max-width: 768px) {
+
+.bottomCarousel_collapses {
+    flex-direction: column;
+}
 }

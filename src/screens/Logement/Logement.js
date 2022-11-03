@@ -2,6 +2,7 @@ import Collapse from "../../components/Collapse/Collapse"
 import * as apartments from "../../data/apartments.json"
 import { useParams, Navigate } from "react-router-dom"
 import "./Logement.css"
+import Carousel from "../../components/Carousel/Carousel"
 
 const apartmentsArray = apartments.default
 
@@ -15,7 +16,9 @@ function Logement() {
         return <Navigate to="/404" />
     }
 
-    return <section className="bottomCarousel">
+    return <div className="mainWrapperLogement">
+        <Carousel/>
+        <section className="bottomCarousel">
         <div className="bottomCarousel_OutCollapseInfos">
             <div className="bottomCarousel_OutCollapseInfos_titlesAndTags">
                 <h1>{matchingApartment.title}</h1>
@@ -43,15 +46,19 @@ function Logement() {
 
 
         <div className="bottomCarousel_collapses">
+            <div className="bottomCarousel_collapses_collapse">
             <Collapse title={"Description"}
                 id={matchingApartment.id}
                 content={matchingApartment.description} />
-
+                </div>
+                <div className="bottomCarousel_collapses_collapse">
             <Collapse title={"Équipements"}
                 id={matchingApartment.id}
                 content={matchingApartment.equipments} />
+                </div>
         </div>
     </section>
+    </div>
 }
 
 
