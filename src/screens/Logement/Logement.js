@@ -4,13 +4,10 @@ import { useParams, Navigate } from "react-router-dom"
 import "./Logement.css"
 import Carousel from "../../components/Carousel/Carousel"
 
-const apartmentsArray = apartments.default
-
-
 function Logement() {
     const params = useParams()
     const id = params.id
-    const matchingApartment = apartmentsArray.find(apartment => apartment.id === id)
+    const matchingApartment = apartments.default.find(apartment => apartment.id === id)
 
     if (matchingApartment === undefined) {
         return <Navigate to="/404" />

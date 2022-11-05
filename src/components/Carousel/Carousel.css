@@ -1,4 +1,4 @@
-.Carrousel {
+.carousel {
     position: relative;
     display: flex;
     justify-content: center;
@@ -7,7 +7,7 @@
     max-width: 1240px;
     margin: 0px auto;
   }
-  .Carrousel p {
+  .carousel p {
     position: absolute;
     z-index: 20;
     color: white;
@@ -15,13 +15,13 @@
     font-weight: 500;
     bottom: 0px;
   }
-  .Carrousel_image {
+  .carousel_image {
     border-radius: 25px;
     height: 100%;
     width: 100%;
     object-fit: cover;
   }
-  .fleche_droite {
+  .right_vector {
     position: absolute;
     cursor: pointer;
     top: 40%;
@@ -29,7 +29,7 @@
     right: 20px;
     user-select: none;
   }
-  .fleche_gauche {
+  .left_vector {
     position: absolute;
     cursor: pointer;
     top: 40%;
@@ -37,35 +37,40 @@
     left: 20px;
     user-select: none;
   }
-  .slide {
+  .inactive {
     opacity: 0;
     transition-duration: 1s ease;
     transform: scale(0.95);
   }
-  .slide.active {
+  .active {
     height: 100%;
     width: 100%;
     opacity: 1;
     transition-duration: 1s;
     transform: scale(1);
   }
+  .noPictures {
+    color: #FF6060;
+    font-size: 36px;
+    font-weight: 500;
+  }
   @media screen and (max-width: 768px) {
-    .Carrousel {
+    .carousel {
       height: 255px;
     }
-    .Carrousel p {
+    .carousel p {
       display: none;
     }
-    .Carrousel_image {
+    .carousel_image {
       border-radius: 10px;
     }
-    .fleche_droite {
+    .right_vector {
       height: 20px;
       width: 11.7px;
       top: 48%;
       right: 7px;
     }
-    .fleche_gauche {
+    .left_vector {
       height: 20px;
       width: 11.7px;
       top: 48%;
