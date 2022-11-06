@@ -7,12 +7,15 @@
     color: #FF6060;
     font-size: 36px;
     font-weight: 500;
+    margin: 0;
 }
 
 .bottomCarousel h2 {
     color: #FF6060;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 300;
+    margin-top: 5px;
+    margin-bottom: 25px
 }
 
 .bottomCarousel_OutCollapseInfos {
@@ -44,37 +47,87 @@
     background-color: #FF6060;
     color: white;
     font-weight: 300;
+    font-size: 14px;
     border-radius: 20px;
 }
 
 .bottomCarousel_collapses {
     display: flex;
     justify-content: space-between;
-    max-width: 1480px;
-    margin: 55px;
+    max-width: 1240px;
+    margin: 0px auto;
 }
 
 .bottomCarousel_collapses_collapse {
-    width: 38%;
+    width: 48%;
+    list-style-type: none;
 }
 
 .host {
     display: flex;
+    flex-direction: column;
 }
 
 .host p {
    color: #FF6060;
    width: 65px;
+   margin-right: 20px;
+   text-align: end;
 }
-.host img {
+.host_infos {
+    display: flex;
+    margin-bottom: 20px;
+}
+.host_infos_picture {
     border-radius: 100px;
     height: 64px;
     width: 64px;
 }
+.host_rating {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.star {
+    height: 30px;
+    width: 30px;
+}
 
 @media all and (max-width: 768px) {
+
+.bottomCarousel_OutCollapseInfos {
+    flex-direction: column;
+}
 
 .bottomCarousel_collapses {
     flex-direction: column;
 }
+
+.bottomCarousel_collapses_collapse {
+    width:100%;
+}
+
+.bottomCarousel h1 {
+    font-size: 18px
+}
+.bottomCarousel h2 {
+    font-size: 14px
+}
+
+.bottomCarousel_OutCollapseInfos_titlesAndTags_tags_tag {
+    font-size: 10px;
+    width: auto;
+    height: auto;
+}
+
+.host {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 25px;
+    width: 100%;
+}
+
+
 }
