@@ -5,18 +5,23 @@ import "./Logement.css"
 import Carousel from "../../components/Carousel/Carousel"
 import Rating from "../../components/Rating/Rating"
 
-
+// Contenu de la page "Logement"
 function Logement() {
+    // Récupération de l'ID du logement dans l'URL
     const params = useParams()
     const id = params.id
+    // Récupération du tableau d'appartements (default), puis de l'appartement correspondant au bon ID (find)
     const matchingApartment = apartments.default.find(apartment => apartment.id === id)
 
+    // Condition pour gérer le cas ou l'id est incorrect afin de renvoyer vers la page d'erreur avec l'API "Navigate" de React Router
     if (matchingApartment === undefined) {
         return <Navigate to="/404" />
     }
 
+    // Récupération des notes des appartements
     const matchingApartmentRating = matchingApartment.rating
 
+    // Affichage du contenu de la page "Logement" incluant les composants "Carousel", "Rating" et "Collapse"
     return <div className="mainWrapperLogement">
 
         <Carousel />
@@ -44,7 +49,8 @@ function Logement() {
                         <img className="bottomCarousel_OutCollapseInfos_host_infos_picture" src={matchingApartment?.host.picture} alt="L'hôte" />
                     </div>
                     <div className="bottomCarousel_OutCollapseInfos_host_rating">
-                        <Rating arrayToRate={matchingApartmentRating} />
+                        <Rating arrayToRate={matchingApartmentRating}
+                                maxRate={"5"} />
                     </div>
                 </div>
             </div>

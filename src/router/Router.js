@@ -6,6 +6,7 @@ import Logement from "../screens/Logement/Logement"
 import Apropos from "../screens/Apropos/Apropos"
 import Error from "../screens/Error/Error"
 
+// Fonction permettant de gérer les routes du site avec React Router, notamment en y incluant systématiquement "Header" et "Footer"
 function Router() {
     return (
         <BrowserRouter>

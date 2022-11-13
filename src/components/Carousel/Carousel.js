@@ -5,6 +5,7 @@ import "./Carousel.css"
 import right_vector from "../../assets/right_vector.png"
 import left_vector from "../../assets/left_vector.png"
 
+// Composant Carousel, modulable dans ses images affichables
 function Carousel() {
   // Récupération de l'ID du logement dans l'URL
   const params = useParams()
@@ -43,7 +44,7 @@ function Carousel() {
       })}
     </div>
   }
-  
+
   // ... Ou plus d'une
   else {
     return <div className="carousel">
@@ -54,7 +55,7 @@ function Carousel() {
 
       {apartmentPictures.map((photos, index) => {
 
-  // Affichage de l'image correspondante à l'itération en cours
+        // Affichage de l'image correspondante à l'itération en cours
         return (
           <div className={index === currentPicture ? 'active' : 'inactive'} key={photos + index + id}>
             {index === currentPicture && (<img className="carousel_image" src={photos} alt="Photos du logement" />)}
