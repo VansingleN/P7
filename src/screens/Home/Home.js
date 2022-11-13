@@ -9,8 +9,10 @@ const apartmentsArray = apartments.default
 function Home() {
     return (
         <div>
+            <div className='bannerHome'>
             <Banner image={banner_img}
                 text="Chez vous, partout et ailleurs" />
+                </div>
             <ListApartments data={apartmentsArray} />
         </div>
     )

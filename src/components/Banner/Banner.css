@@ -2,13 +2,14 @@
   display: flex;
   justify-content: center;
   margin: 43px 0px;
+  height: 100%
 }
 
 .banner_div {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 223px;
+  height: 100%
 }
 
 .banner_div h1 {
@@ -18,45 +19,48 @@
   z-index: 3;
   line-height: 24px;
   margin: 0px 20px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .banner_div_img {
   background-position: center center;
-  height: 223px;
-  width: 97.5%;
+
+  width: 91%;
   max-width: 1240px;
   border-radius: 25px;
   position: absolute;
   z-index: 0;
+  height: 100%;
 }
 
 .banner_div_background {
   background-color: black;
-  height: 223px;
-  width: 97.5%;
+  width: 91%;
   max-width: 1240px;
   position: absolute;
   opacity: 30%;
   border-radius: 25px;
+  height: 100%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   .banner_position {
-    margin: 25px 0px;
+    margin: 19px 0px;
   }
 
   .banner_div h1 {
-    font-weight: 400;
+    font-weight: 300;
   }
 
   .banner_div_img {
     background-size: cover;
-    height: 111px;
     border-radius: 10px;
+    object-fit: cover;
   }
 
   .banner_div_background {
-    height: 111px;
+
     border-radius: 10px;
   }
 }

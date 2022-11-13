@@ -1,0 +1,33 @@
+.mainWrapperApropos {
+    margin: 0 100px;
+}
+
+.bannerApropos {
+    position: relative;
+    height: 223px;
+    margin-bottom: 30px;
+}
+
+.collapseApropos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 140px;
+    margin-left: 140px;
+}
+
+@media screen and (max-width: 900px) {
+
+    /* .bannerApropos img {
+    width: 100%;
+    background-image: url(../../assets/banner_img_apropos_mobile.png);
+} */
+    .mainWrapperApropos {
+        margin: 0;
+    }
+
+    .collapseApropos {
+        margin-right: 35px;
+        margin-left: 35px;
+    }
+}

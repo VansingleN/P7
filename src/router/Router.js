@@ -9,7 +9,7 @@ import Error from "../screens/Error/Error"
 function Router() {
     return (
         <BrowserRouter>
-        <Header/>
+            <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/Logement/*" element={<Error />} />
@@ -18,7 +18,7 @@ function Router() {
                 <Route path="*" element={<Error />} />
                 <Route path="/404" element={<Error />} />
             </Routes>
-            <Footer/>
+            <Footer />
         </BrowserRouter>
     )
 }

@@ -2,3 +2,14 @@
     font-family: 'Montserrat';
     font-style: normal;
 }
+
+.bannerHome {
+    position: relative;
+    height: 223px;
+}
+
+@media screen and (max-width: 900px) {
+    .bannerHome {
+        height: 111px;
+    }
+}

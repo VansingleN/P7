@@ -6,7 +6,7 @@ import right_vector from "../../assets/right_vector.png"
 import left_vector from "../../assets/left_vector.png"
 
 function Carousel() {
-  // Récupération de l'ID du logements dans l'URL
+  // Récupération de l'ID du logement dans l'URL
   const params = useParams()
   const id = params.id
   // Récupération du tableau d'appartements (default), puis de l'appartement correspondant au bon ID (find), puis de ses photos (pictures)
@@ -36,7 +36,7 @@ function Carousel() {
 
       {apartmentPictures.map((photos, index) => {
         return (
-          <div className={index === currentPicture ? 'active' : 'inactive'} key={index + id}>
+          <div className={index === currentPicture ? 'active' : 'inactive'} key={photos + index + id}>
             {index === currentPicture && (<img className="carousel_image" src={photos} alt="Photos du logement" />)}
           </div>
         )
@@ -56,7 +56,7 @@ function Carousel() {
 
   // Affichage de l'image correspondante à l'itération en cours
         return (
-          <div className={index === currentPicture ? 'active' : 'inactive'} key={index + id}>
+          <div className={index === currentPicture ? 'active' : 'inactive'} key={photos + index + id}>
             {index === currentPicture && (<img className="carousel_image" src={photos} alt="Photos du logement" />)}
           </div>
         )

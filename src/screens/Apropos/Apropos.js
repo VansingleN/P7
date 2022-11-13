@@ -8,14 +8,19 @@ const collapseContentArray = collapseContent.default
 
 function Apropos() {
     return (
-        <div>
+        <div className='mainWrapperApropos'>
+            <div className='bannerApropos'>
             <Banner image={banner_img_apropos}
                 text="" />
+                </div>
+                <div className='collapseApropos'>
             {collapseContentArray.map(({ title, id, content }) => (
                 <Collapse title={title}
                     id={id}
-                    content={content} />
+                    content={content}
+                    key={title+id} />
             ))}
+            </div>
         </div>
     )
 }

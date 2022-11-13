@@ -1,15 +1,16 @@
 import './ListApartments.css'
 import Card from '../Card/Card'
 
-function ListApartments (props) {
+function ListApartments(props) {
     return (
-            <ul className="div_cards">
-                {props.data.map (({ title, id, cover }) => (
-                    <Card title = {title}
-                    id = {id}
-                    cover = {cover} />
-                ))}
-            </ul>
+        <ul className="div_cards">
+            {props.data.map(({ title, id, cover}) => (
+                <Card title={title}
+                    id={id}
+                    cover={cover}
+                    key={title + id} />
+            ))}
+        </ul>
     )
 }
 
